@@ -244,6 +244,19 @@ footer {
         margin: 0 auto;
     }
 
+    .container-left {
+        margin-top: 100px;
+        text-align: center;
+    }
+
+    .container-left h4 {
+        margin-bottom: 20px;
+    }
+
+    .container-left h1 {
+        margin-bottom: 50px;
+    }
+
     .ghosts {
         height: 550px;
         margin-left: 100px;
@@ -257,7 +270,6 @@ footer {
 @media screen and (max-width: 500px) {
 
     .container-left {
-        text-align: center;
         width: 350px;
         margin-top: 50px;
     }
