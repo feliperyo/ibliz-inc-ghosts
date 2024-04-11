@@ -196,6 +196,7 @@ main {
     font-size: 20px;
     font-weight: 700;
     line-height: 36px;
+    margin-left: 10px;
 }
 
 .info-ghosts p {
@@ -226,4 +227,76 @@ footer {
 
 .btn-footer:hover {
     color: #303056;
+}
+
+@media screen and (max-width: 1030px) {
+    header {
+        display: none;
+    }
+
+    main {
+        flex-direction: column;
+        width: 95%;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0px;
+        padding-top: 0px;
+        margin: 0 auto;
+    }
+
+    .ghosts {
+        height: 550px;
+        margin-left: 100px;
+    }
+
+    .info-ghosts {
+        margin-top: -75px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .container-left {
+        text-align: center;
+        width: 350px;
+        margin-top: 50px;
+    }
+
+    .container-left h4 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .container-left h1 {
+        font-size: 40px;
+        line-height: 40px;
+        margin-bottom: 40px;
+    }
+
+    .container-left p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28.8px;
+        color: #303056;
+        margin-bottom: 50px;
+    }
+
+    .ghosts {
+        height: 350px;
+        margin-left: 50px;
+    }
+
+    .info-ghosts {
+        margin-top: -40px;
+        margin-right: 50px;
+        gap: 15px;
+    }
+
+    .info-ghosts h6 {
+        font-size: 16px;
+    }
+
+    .info-ghosts p {
+        font-size: 14px;
+    }
 }
