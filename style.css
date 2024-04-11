@@ -32,6 +32,22 @@ header img {
     margin-left: 54px;
     color: #303056;
     cursor: pointer;
+    position: relative;
+}
+
+.link-header::after {
+    content: '';
+    background-color: #303056;
+    position: absolute;
+    height: 1px;
+    left: 0;
+    bottom: -1px;
+    width: 0%;
+    transition: 0.3s;
+}
+
+.link-header:hover::after {
+    width: 100%;
 }
 
 .btn-header {
@@ -44,6 +60,27 @@ header img {
     padding: 10px 20px;
     border-radius: 41px;
     cursor: pointer;
+    position: relative;
+}
+
+.btn-header:hover {
+    color: #ffffff;
+    border: 1px solid #fff;
+}
+
+.btn-header::after {
+    content: '';
+    background-color: #ffffff;
+    position: absolute;
+    height: 1px;
+    left: 16px;
+    bottom: 9px;
+    width: 0%;
+    transition: 0.3s;
+}
+
+.btn-header:hover::after {
+    width: 60%;
 }
 
 main {
@@ -104,16 +141,36 @@ main {
     color: #ffffff;
 }
 
+.btn-section:hover {
+    color: #303056;
+}
+
 .a-section {
     font-size: 15px;
     font-weight: 600;
     line-height: 22.5px;
     color: #303056;
     cursor: pointer;
+    position: relative;
 }
 
 .a-section img {
     margin-left: 15px;
+}
+
+.a-section::after {
+    content: '';
+    background-color: #303056;
+    position: absolute;
+    height: 1px;
+    left: 0;
+    bottom: -1px;
+    width: 0%;
+    transition: 0.3s;
+}
+
+.a-section:hover::after {
+    width: 100%;
 }
 
 .container-right {
@@ -165,4 +222,8 @@ footer {
     font-weight: 600;
     line-height: 22.5px;
     color: #ffffff;
+}
+
+.btn-footer:hover {
+    color: #303056;
 }
